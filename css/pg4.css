@@ -1,0 +1,60 @@
+body {
+ 
+  
+  
+}
+.container {  display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 2fr 3fr 4fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav"
+      "div-1 div-2"
+      "div-3 div-3"
+      "div-4 div-4"
+      "div-5 div-5"
+      "footer footer";
+  }
+  
+  
+ 
+  .div-1 { 
+    grid-area: div-1; 
+    border: 1px solid black;
+}
+  .div-3 { 
+    grid-area: div-3; 
+    border: 1px solid black;
+}
+  .div-2 { 
+    grid-area: div-2; 
+    border: 1px solid black;
+}
+  .div-4 { 
+    grid-area: div-4; 
+    border: 1px solid black;
+}
+  .div-5 { 
+    grid-area: div-5; 
+    border: 1px solid black;
+}
+  .footer { 
+    grid-area: footer; 
+    border: 1px solid black;
+}
+  .nav { 
+    grid-area: nav; 
+   /* border: 1px solid black;*/
+}
+
+.signin {
+color: #0850F8;
+border-color: #0850F8;
+}
+.tryit {
+    background-color: #0850F8;
+    border-color: #0850F8;
+}
