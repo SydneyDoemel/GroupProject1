@@ -1,0 +1,32 @@
+/* sign in page */
+/* blue color: #1315fe */
+/* font:  */
+
+  .picture {
+    color: white;
+    background-color: #1315fe;
+ }
+  
+
+  .btn {
+    background-color: #1315fe;
+  }
+
+  .input-group-text {
+    background-color: white;
+  }
+
+  .modal-form-group .input-icon {
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    left: 8px;
+    top: 10px;
+    color: #979faf;
+    font-size: 26px;
+  }
+
+  .signup {
+    text-decoration: none;
+    color: white;
+  }
