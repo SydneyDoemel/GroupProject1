@@ -1,0 +1,95 @@
+
+.container {  display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 2fr 3fr 4fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav nav"
+      "div-1 div-2"
+      "div-3 div-3"
+      "div-4 div-4"
+      "div-5 div-5"
+      "footer footer";
+  }
+  
+  
+ 
+  .div-1 { 
+    grid-area: div-1; 
+    border: 1px solid black;
+}
+  .div-3 { 
+    grid-area: div-3; 
+    border: 1px solid black;
+}
+  .div-2 { 
+    grid-area: div-2; 
+    border: 1px solid black;
+}
+  .div-4 { 
+    grid-area: div-4; 
+    border: 1px solid black;
+}
+  .div-5 { 
+    grid-area: div-5; 
+    border: 1px solid black;
+}
+  .footer { 
+    grid-area: footer; 
+    border: 1px solid black;
+    text-align: center;
+}
+  .nav { 
+    grid-area: nav; 
+   /* border: 1px solid black;*/
+}
+​
+.signin {
+color: #0850F8;
+border-color: #0850F8;
+}
+.tryit {
+    background-color: #0850F8;
+    border-color: #0850F8;
+}
+
+
+#td1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#td2{
+    margin-bottom: 20px;
+}
+
+#td3{
+    margin-right: 30px;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+
+#td4{
+    padding-left: 60px;
+    padding-right: 30px;
+    font-size: small;
+    margin-left: 30px;
+}
+
+#td5{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#td6{
+    position: relative;
+    top:-5px;
+    padding-left: 30%;
+}
+
+.list{
+    padding-left: 20px;
+}
