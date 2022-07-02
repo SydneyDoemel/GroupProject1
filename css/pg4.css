@@ -1,11 +1,5 @@
-body {
- 
-  
-  
 
-  
-}
-.container {  display: grid;
+.container1 {  display: grid;
     margin: auto;
     width: 100%;
     grid-template-columns: 1fr 1fr;
@@ -148,6 +142,17 @@ border-color: #0850F8;
   background-color: #0850F8;
   color: white;
   padding-top: 4rem;
+
+}
+.div-4-text h4 {
+  font-size: 2vw;
+}
+.div-4-text p {
+  font-size: 1.5vw;
+
+}
+.div-4-text ul li{
+  font-size: 1.3vw;
 }
 .div-4-text button {
   width: 40%;
