@@ -2,6 +2,8 @@ body {
  
   
   
+
+  
 }
 .container {  display: grid;
     margin: auto;
@@ -20,7 +22,7 @@ body {
   }
   
   
- 
+
   .div-1 { 
     grid-area: div-1; 
     border: 1px solid black;
@@ -33,6 +35,11 @@ body {
     grid-area: div-2; 
     border: 1px solid black;
 }
+.header-side {
+  height: 70vh;
+  width: auto;
+ 
+}
   .div-4 { 
     grid-area: div-4; 
     border: 1px solid black;
@@ -44,17 +51,149 @@ body {
   .footer { 
     grid-area: footer; 
     border: 1px solid black;
+    text-align: center;
 }
   .nav { 
     grid-area: nav; 
    /* border: 1px solid black;*/
 }
 
-.signin {
+.div-1 p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.div-1 p a:hover {
+  color: #0850F8;
+}
+
+.div-1 h1{
+  font-size: 5vw;
+}
+.div-1 h3 {
+  font-size: 3vw;
+}
+.div-1 p {
+  font-size:1.4vw;
+}
+.signin, .chat {
 color: #0850F8;
 border-color: #0850F8;
 }
-.tryit {
+
+.tryit, .signup{
     background-color: #0850F8;
     border-color: #0850F8;
+}
+
+
+.small-text img{
+  height: 1rem;
+}
+
+.blue-dot {
+  height: 5px;
+  padding-left: 5px;
+  padding-right: 5-px;
+}
+
+.div-3-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.square-icon img{
+  height: 2rem;
+  margin-left: 25px;
+}
+.square-icon {
+  border: 1px solid rgba(133, 133, 133, 0.5);
+  border-radius: 10%;
+  width: 6rem;
+  height: 6rem;
+}
+
+
+
+.container2 {  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr;
+  border: 1px solid rgba(133, 133, 133, 0.5);
+  margin: 1.5rem 3rem;
+  height: 80%;
+  border-radius: 10%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "div-4-pic div-4-pic div-4-text div-4-text div-4-text";
+}
+
+.div-4-pic { 
+  grid-area: div-4-pic; 
+  
+}
+
+  .div-4-pic img {
+    width: 32rem;
+    padding: 5rem;
+    padding-left: 9rem;
+    object-fit: cover;
+    
+}
+
+.div-4-text { 
+  grid-area: div-4-text; 
+  padding-left: 2rem;
+  background-color: #0850F8;
+  color: white;
+  padding-top: 4rem;
+}
+.div-4-text button {
+  width: 40%;
+}
+
+.learn-arrow {
+
+  padding-left: 1rem;
+}
+
+
+
+
+
+/* Charlie's  code below*/
+
+​
+#td1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+​
+#td2{
+    margin-bottom: 20px;
+}
+​
+#td3{
+    margin-right: 30px;
+    padding-right: 50px;
+    padding-left: 40px;
+}
+​
+#td4{
+    padding-left: 60px;
+    padding-right: 30px;
+    font-size: small;
+    margin-left: 30px;
+}
+​
+#td5{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+​
+#td6{
+    position: relative;
+    top:-5px;
+    padding-left: 30%;
 }
