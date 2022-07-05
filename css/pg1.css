@@ -1,0 +1,9 @@
+.social .btn{
+    border: 1px solid black;
+    Background-color: white;
+    border-radius: 50%;
+}
+
+.icon {
+    padding:20px;
+    }
