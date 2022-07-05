@@ -369,6 +369,17 @@ width: auto;
   .div-2 {
     margin-bottom:0vh;
   }
+  .div-4-pic img {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      padding: 0;
+      padding-top: 16vh;
+      padding-left: 0;
+      object-fit: contain;
+     
+    
+  }
   
   
   }
