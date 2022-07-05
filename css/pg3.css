@@ -1,9 +1,9 @@
 
-.container {  display: grid;
+.container1 {  display: grid;
     margin: auto;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 3fr 2fr 3fr 4fr 2fr;
+    grid-template-rows: 0.5fr 3fr 1fr 3fr 5fr 2fr; /* 2 fr 4 fr */
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -19,27 +19,32 @@
  
   .div-1 { 
     grid-area: div-1; 
-    border: 1px solid black;
+    
+    padding-left: 100px;
 }
   .div-3 { 
     grid-area: div-3; 
-    border: 1px solid black;
+    
 }
   .div-2 { 
     grid-area: div-2; 
-    border: 1px solid black;
+    
 }
   .div-4 { 
     grid-area: div-4; 
-    border: 1px solid black;
+    
+    padding-left:80px;
+    padding-right: 80px;
 }
   .div-5 { 
     grid-area: div-5; 
-    border: 1px solid black;
+    
+    padding-left: 80px;
+    padding-right: 80px;
 }
   .footer { 
     grid-area: footer; 
-    border: 1px solid black;
+    
     text-align: center;
 }
   .nav { 
@@ -60,6 +65,7 @@ border-color: #0850F8;
 #td1{
     margin-top: 20px;
     margin-bottom: 20px;
+    
 }
 
 #td2{
@@ -73,10 +79,11 @@ border-color: #0850F8;
 }
 
 #td4{
-    padding-left: 60px;
-    padding-right: 30px;
-    font-size: small;
+    padding-left: 35px;
+    padding-right: 25px;
+    font-size:95%;
     margin-left: 30px;
+    padding-bottom: 12px;
 }
 
 #td5{
@@ -90,6 +97,198 @@ border-color: #0850F8;
     padding-left: 30%;
 }
 
+#td7{
+  padding-right:20px;
+  font-size:x-large;
+}
+
+#td8{
+  padding-left:15px;
+}
+#td9{
+  padding-left: 15px;
+}
+#td10{
+  text-align: center;
+}
+#td16{
+  text-align: center;
+}
+#td18{
+  text-align: center;
+  padding-top: 100px;
+}
+#td19{
+  padding-top:80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .list{
     padding-left: 20px;
+}
+.div-1 p a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.div-1 p a:hover {
+  color: #0850F8;
+}
+
+.div-1 h1{
+  font-size: 5vw;
+  
+}
+.div-1 h3 {
+  font-size: 3vw;
+ 
+}
+.div-1 p {
+  font-size:1.4vw;
+  
+}
+.header-side {
+  height: 70vh;
+  width: auto;
+}
+
+.cont2 {  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr;
+  border: 1px solid rgba(133, 133, 133, 0.5);
+  margin: 30px;
+  height: 90%;
+  border-radius: 10%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "div-4-pic div-4-pic div-4-text div-4-text div-4-text";
+}
+
+.div-4-pic{
+  grid-area: div-4-pic;
+  
+}
+.div-4-pic img{
+  width:35rem;
+  padding-left: 40px;
+  padding-top: 60px;
+}
+
+.div-4-text{
+  grid-area: div-4-text;
+  background-color: #0850F8;
+  color: white;
+  
+}
+#td11{
+  text-align: center;
+  padding-top: 100px;
+}
+#td12{
+  padding-top:80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.cont3 {  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr;
+  margin: 50px;
+  height: 55%;
+  border-radius: 10%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "div-5-pic div-5-pic div-5-text div-5-text div-5-text";
+}
+
+.div-5-text{
+  background-color: #0850F8;
+  color: white;
+}
+
+.div-5-pic img {
+  width:70%;
+  height: 80%;
+  
+}
+
+@media (max-width: 576px) {
+  .container1 {
+    margin: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr .5fr .5fr .3fr 1fr 1fr .5fr; 
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "nav"
+      "div-1"
+      "div-2"
+      "div-3"
+      "div-4"
+      "div-5"
+      "footer";
+  }
+  .div-5{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+
+  #td16{
+    font-size:4vw;
+    text-align: center;
+  }
+  #td17{
+    font-size: 4vw;
+  }
+  .div-5-pic img{
+    width:150px;
+    height:400px;
+  }
+  .div-5-text{
+    font-size: small;
+  }
+
+  .cont2 {  display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    border: 1px solid rgba(133, 133, 133, 0.5);
+    margin: 30px;
+    height: 90%;
+    border-radius: 10%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "div-4-pic div-4-text";
+  }
+  .div-4-pic img{
+    width:150px;
+    height: auto;
+  }
+  #td19{
+    font-size: 4vw;
+  }
+  #td18{
+    font-size: 5vw;
+  }
+#td10{
+  font-size: 5vw;
+}
+#td15{
+  font-size: 4vw;
+}
+
+}
+
+@media (max-width: 1030) {
+  #td20 {
+    margin-left: 1px;
+
+  }
 }
